@@ -1,0 +1,77 @@
+@font-face {
+		font-family: 'Raleway-Black';
+		src: url('../fonts/Raleway-Black.eot');
+		src: url('../fonts/Raleway-Black.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/Raleway-Black.otf')  format('opentype'),
+				 url('../fonts/Raleway-Black.woff2') format('woff2'),
+				 url('../fonts/Raleway-Black.woff') format('woff'),
+				 url('../fonts/Raleway-Black.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+
+}
+
+@font-face {
+		font-family: 'Raleway-Bold';
+		src: url('../fonts/Raleway-Bold.eot');
+		src: url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/Raleway-Bold.otf')  format('opentype'),
+				 url('../fonts/Raleway-Bold.woff2') format('woff2'),
+				 url('../fonts/Raleway-Bold.woff') format('woff'),
+				 url('../fonts/Raleway-Bold.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+
+}
+
+@font-face {
+		font-family: 'Raleway-ExtraBold';
+		src: url('../fonts/Raleway-ExtraBold.eot');
+		src: url('../fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/Raleway-ExtraBold.otf')  format('opentype'),
+				 url('../fonts/Raleway-ExtraBold.woff2') format('woff2'),
+				 url('../fonts/Raleway-ExtraBold.woff') format('woff'),
+				 url('../fonts/Raleway-ExtraBold.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+
+}
+
+@font-face {
+		font-family: 'Raleway-Medium';
+		src: url('../fonts/Raleway-Medium.eot');
+		src: url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/Raleway-Medium.otf')  format('opentype'),
+				 url('../fonts/Raleway-Medium.woff2') format('woff2'),
+				 url('../fonts/Raleway-Medium.woff') format('woff'),
+				 url('../fonts/Raleway-Medium.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+
+}
+
+@font-face {
+		font-family: 'Raleway-Regular';
+		src: url('../fonts/Raleway-Regular.eot');
+		src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/Raleway-Regular.otf')  format('opentype'),
+				 url('../fonts/Raleway-Regular.woff2') format('woff2'),
+				 url('../fonts/Raleway-Regular.woff') format('woff'),
+				 url('../fonts/Raleway-Regular.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+
+}
+
+@font-face {
+		font-family: 'Raleway-SemiBold';
+		src: url('../fonts/Raleway-SemiBold.eot');
+		src: url('../fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/Raleway-SemiBold.otf')  format('opentype'),
+				 url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
+				 url('../fonts/Raleway-SemiBold.woff') format('woff'),
+				 url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+
+}

@@ -1,0 +1,204 @@
+@import url(fonts.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Raleway-Regular', sans-serif;
+	font-size: 1.6rem;
+/*	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;*/
+}
+html {
+	font-size: 62.5%; 
+}
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: #ffffff;
+}
+p, hr, ol, ul {
+	margin: 0;
+}
+.btn-press {
+	position: relative;
+	display: inline-block;
+  background: #ffee7e;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  font-family: 'Raleway-ExtraBold';
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.btn-press:hover {
+	background: #f5e474;
+	color: #404040;
+}
+
+/*.press-btn {
+	text-align: center;
+	display: inline-block;
+  background-color: rgb(71, 186, 77);
+  box-shadow: 0px 2px 13px 0px rgba(30, 157, 36, 0.71);
+  line-height: 54px;
+	width: 100%;
+	font-family: 'Raleway-Bold';
+	text-transform: uppercase;
+	-webkit-transition: all 1s ease;;
+	-moz-transition: all 1s ease;;
+	-o-transition: all 1s ease;;
+	transition: all 1s ease;
+}
+
+.press-btn:hover {
+	background: #4aa24e;
+}*/
+
+.title {
+	font-family: 'Raleway-ExtraBold';
+	font-size: 6rem;
+	color: #3d3d3d;
+	line-height: 60px;
+}
+
+.leftBlock {
+	position: relative;
+	float: left;
+}
+.rightBlock {
+	position: relative;
+	float: right;
+}
+
+::-webkit-input-placeholder {color:#8d8d8d;}
+::-moz-placeholder          {color:#8d8d8d;}/* Firefox 19+ */
+:-moz-placeholder           {color:#8d8d8d;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#8d8d8d;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+/*--------------------HEADER START--------------------*/
+header {
+	position: relative;
+	width: 100%;
+	background: #fef8ed;
+}
+	header a.logo {
+		position: relative;
+		float: left;
+		width: 23.33%;
+		max-width: 266px;
+		background: #76bcf5;
+		text-align: center;
+		padding: 22px 0;
+		min-height: 90px;
+	}
+		header a.logo img,
+		header a.logo span {
+			position: relative;
+			display: inline-block;
+			-webkit-transition: all 1s ease;;
+			-moz-transition: all 1s ease;;
+			-o-transition: all 1s ease;;
+			transition: all 1s ease;
+		}
+		header a.logo span {
+			font-family: 'Source Sans Pro';
+			font-size: 2.4rem;
+			font-weight: 700;
+			line-height: 46px;
+		}
+		header a.logo img {
+			margin-top: -8px;
+		}
+	header a.logo:hover img,
+	header a.logo:hover span {
+		-webkit-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+	header ul.menu {
+		position: relative;
+		float: left;
+		text-align: center;
+		max-width: 780px;
+		width: 68.42%;
+		padding: 22px 0 22px 20px;
+	}
+		header ul.menu li {
+			list-style: none;
+			display: inline-block;
+		}
+			header ul.menu li a {
+				display: block;
+				color: #3d3d3d;
+				font-size: 1.5rem;
+				line-height: 46px;
+				font-family: 'Raleway-Semibold';
+				padding: 0 14px;
+			}
+			header ul.menu li a:hover {
+				color: #76bcf5;
+			}
+	header ul.social {
+		position: relative;
+		float: left;
+		text-align: center;
+		max-width: 94px;
+		list-style: none;
+		width: 8.24%;
+		padding: 22px 0
+	}
+		header ul.social li {
+			float: left;
+			width: 33.33%;
+			text-align: center;
+		}
+			header ul.social li a {
+				display: block;
+				line-height: 46px;
+				color: #69d6cc;
+				padding: 0 5px;
+				-webkit-transition: all 1s ease;;
+				-moz-transition: all 1s ease;;
+				-o-transition: all 1s ease;;
+				transition: all 1s ease;
+			}
+			header ul.social li a:hover {
+				-webkit-transform: scale(1.8);
+				-ms-transform: scale(1.8);
+				transform: scale(1.8);
+				color: #76bcf5;
+			}
+	header .mobile-menu {
+		position: relative;
+		float: right;
+		line-height: 48px;
+		width: 60px;
+		font-size: 3.6rem;
+		color: #76bcf5;
+		border: 6px solid #76bcf5;
+		text-align: center;
+		border-radius: 5px;
+		margin-top: 15px;
+		display: none;
+	}
+	header .mobile-menu.color {
+		color: #69d6cc;
+		border-color: #69d6cc;
+	}
+/*---------------------HEADER END---------------------*/
