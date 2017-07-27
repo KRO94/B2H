@@ -2,23 +2,33 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
+	/*--------------------HEADER START--------------------*/
 	header ul.menu {
 		padding-left: 10px;
 	}
 			header ul.menu li a {
 				padding: 0 4px;
 			}
+	/*---------------------HEADER END---------------------*/
+
+	/*---------------------BLOCK-AFTER-HEADER START---------------------*/
+	.block-after-header .withGirl .big-text {
+		font-size: 9.8rem;
+		line-height: 168px;
+	}
+	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
+	/*--------------------HEADER START--------------------*/
 	header a.logo {
 		width: 36.94%;
 	}
 	header ul.menu {
 		position: absolute;
 		top: 90px;
-		background: rgba(255,255,255, .9);
+		background: rgba(254,248,237, .9);
 		width: 100%;
 		display: none;
 		max-width: 720px;
@@ -34,10 +44,24 @@
 		width: 13%;
 		margin: 0 20.86%;
 	}
+	/*---------------------HEADER END---------------------*/
+
+	/*---------------------BLOCK-AFTER-HEADER START---------------------*/
+	.block-after-header .withGirl {
+		width: 92%;
+	}
+	.block-after-header .share {
+		width: 8%;
+	}
+	.block-after-header .withGirl .big-text {
+		font-size: 7rem;
+	}
+	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+	/*--------------------HEADER START--------------------*/
 	header a.logo {
 		width: 43.6%;
 	}
@@ -47,12 +71,37 @@
 	}
 	header ul.social {
 		width: 15.4%;
-		margin: 0 15.58%;
+		margin: 0 15.4%;
 	}
+	/*---------------------HEADER END---------------------*/
+
+	/*---------------------BLOCK-AFTER-HEADER START---------------------*/
+	.block-after-header .withGirl,
+	.block-after-header .share {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+	}
+	.block-after-header .share {
+		min-height: 66px;
+		padding: 10px 0;
+	}
+			.block-after-header .share ul li {
+				border: none;
+				float: left;
+				width: 33.33%;
+				padding: 0 5%;
+			}
+			.block-after-header .share ul li:nth-child(2) {
+				border-left: 1px solid #f0f0f0;
+				border-right: 1px solid #f0f0f0;
+			}
+	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 640px) {
+	/*--------------------HEADER START--------------------*/
 	header a.logo {
 		width: 53%;
 	}
@@ -60,11 +109,25 @@
 		width: 16%;
 		margin: 0 8%;
 	}
+	/*---------------------HEADER END---------------------*/
 
+	/*---------------------BLOCK-AFTER-HEADER START---------------------*/
+	.block-after-header .withGirl {
+		padding-top: 150px;
+	}
+		.block-after-header .withGirl .text {
+			margin: 47px auto 10px;
+		}
+		.block-after-header .withGirl .big-text {
+			font-size: 4.9rem;
+			line-height: 60px;
+		}
+	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	/*--------------------HEADER START--------------------*/
 	header a.logo {
 		width: 100%;
 		max-width: 100%;
@@ -76,11 +139,25 @@
 	header ul.menu {
 		top: 165px;
 	}
+	/*---------------------HEADER END---------------------*/
+
+	/*---------------------BLOCK-AFTER-HEADER START---------------------*/
+	.block-after-header .withGirl {
+		padding: 150px 0px 0px 30px;
+	}
+			.block-after-header .withGirl .rightBlock .tel {
+				font-size: 3.6rem;
+				line-height: 56px;
+			}
+			.block-after-header .withGirl .rightBlock .enrol {
+				line-height: 76px;
+			}
+	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+	
 }
 
 

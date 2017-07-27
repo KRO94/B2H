@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Raleway-Regular', sans-serif;
+	font-family: 'Raleway-Black', 'Raleway-Bold', 'Raleway-ExtraBold', 'Raleway-Medium', 'Raleway-Regular', 'Raleway-SemiBold', 'Lato-Black', 'Lato-Bold', 'Lato-Light', 'Lato-Regular', 'Source Sans Pro', sans-serif;
 	font-size: 1.6rem;
 /*	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -43,7 +43,7 @@ p, hr, ol, ul {
 
 .btn-press:hover {
 	background: #f5e474;
-	color: #404040;
+	color: #000;
 }
 
 /*.press-btn {
@@ -202,3 +202,93 @@ header {
 		border-color: #69d6cc;
 	}
 /*---------------------HEADER END---------------------*/
+
+/*---------------------BLOCK-AFTER-HEADER START---------------------*/
+.block-after-header {
+	position: relative;
+	width: 100%;
+	background: #fef8ed;
+}
+	.block-after-header .withGirl {
+		position: relative;
+		display: block;
+		width: 94.12%;
+		max-width: 1073px;
+		background: url(../img/top_block_girl.png) no-repeat center;
+		background-size: cover;
+		padding-top: 259px;
+	}
+		.block-after-header .withGirl .big-text {
+			font-family: 'Raleway-ExtraBold';
+			font-size: 11.8rem;
+			text-align: center;
+			color: #ffffff;
+		}
+		.block-after-header .withGirl .left-v-text {
+			position: absolute;
+			top: 250px;
+			left: -170px;
+			color: #ffffff;
+			font-family: 'Raleway-Bold';
+			font-size: 1.2rem;
+			-webkit-transform: rotate(-90deg);
+			   -moz-transform: rotate(-90deg);
+			     -o-transform: rotate(-90deg);
+			    -ms-transform: rotate(-90deg);
+			        transform: rotate(-90deg);
+		}
+		.block-after-header .withGirl .text {
+			font-family: 'Lato-Regular';
+			font-size: 1.5rem;
+			line-height: 20px;
+			color: #ffffff;
+			max-width: 365px;
+			margin-top: 47px;
+			margin-left: 68px;
+		}
+		.block-after-header .withGirl .rightBlock {
+			max-width: 301px;
+			width: 100%;
+		}
+			.block-after-header .withGirl .rightBlock .tel {
+				font-family: 'Lato-Bold';
+				font-size: 4.2rem;
+				color: #ffffff;
+			}
+			.block-after-header .withGirl .rightBlock .enrol {
+				max-width: 301px;
+				width: 100%;
+				line-height: 94px;
+			}
+	.block-after-header .share {
+		width: 5.87%;
+		max-width: 67px;
+		background: #ffffff;
+		min-height: 708px;
+	  box-shadow: -10px 0px 16px 0px rgba(9, 8, 8, 0.09);
+	}
+		.block-after-header .share ul {
+			position: relative;
+			width: 100%;
+			list-style: none;
+			padding: 0 5px 0 6px;
+		}
+			.block-after-header .share ul li {
+				border-bottom: 1px solid #f0f0f0;
+			}
+				.block-after-header .share ul li a {
+					display: block;
+					line-height: 66px;
+					color: #69d6cc;
+					text-align: center;
+					-webkit-transition: all 1s ease;;
+					-moz-transition: all 1s ease;;
+					-o-transition: all 1s ease;;
+					transition: all 1s ease;
+				}
+				.block-after-header .share ul li a:hover {
+					-webkit-transform: scale(1.6);
+					-ms-transform: scale(1.6);
+					transform: scale(1.6);
+				}
+/*----------------------BLOCK-AFTER-HEADER END----------------------*/

@@ -14,7 +14,7 @@
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<link href="owl-carousel/owl.carousel.css" rel="stylesheet">
 
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Source+Sans+Pro:700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
 
 
 				<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
