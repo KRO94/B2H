@@ -292,3 +292,15 @@ header {
 					transform: scale(1.6);
 				}
 /*----------------------BLOCK-AFTER-HEADER END----------------------*/
+
+/*----------------------BLOCK-VIDEO START----------------------*/
+.block-video {
+	position: relative;
+	width: 100%;
+	padding: 30px 0 65px;
+	background-color: #fef8ed;
+}
+	.block-video iframe {
+		display: none;
+	}
+/*-----------------------BLOCK-VIDEO END-----------------------*/
