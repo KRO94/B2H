@@ -57,6 +57,19 @@
 		font-size: 7rem;
 	}
 	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
+
+	/*-----------------------METHOD-BLOCK START-----------------------*/
+	.method-block .method {
+		padding: 0;
+	}
+	.method-block .method,
+	.method-block .img {
+		float: none;
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+	/*------------------------METHOD-BLOCK END------------------------*/
 }
 
 /* Small Devices, Tablets */
@@ -127,6 +140,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.title{
+		font-size: 4.4rem;
+	}
 	/*--------------------HEADER START--------------------*/
 	header a.logo {
 		width: 100%;
@@ -153,6 +169,12 @@
 				line-height: 76px;
 			}
 	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
+
+	/*-----------------------METHOD-BLOCK START-----------------------*/
+	.method-block .img {
+		display: none;
+	}
+	/*------------------------METHOD-BLOCK END------------------------*/
 }
 
 /* Custom, iPhone Retina */

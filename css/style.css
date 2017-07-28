@@ -70,6 +70,16 @@ p, hr, ol, ul {
 	font-size: 6rem;
 	color: #3d3d3d;
 	line-height: 60px;
+	margin-bottom: 35px;
+}
+.title hr {
+	height: 4px;
+	width: 68px;
+	background-color: #69d6cc;
+	border: none;
+	margin-right: 15px;
+	float: left;
+	margin-top: 28px;
 }
 
 .leftBlock {
@@ -304,3 +314,54 @@ header {
 		display: none;
 	}
 /*-----------------------BLOCK-VIDEO END-----------------------*/
+
+/*-----------------------METHOD-BLOCK START-----------------------*/
+.method-block {
+	position: relative;
+	width: 100%;
+	background: url(../img/method_block_img.png) no-repeat center;
+	background-size: cover;
+	padding: 65px 0 120px;
+}
+	.method-block .method {
+		position: relative;
+		max-width: 458px;
+		width: 40.17%;
+		padding-top: 85px;
+	}
+		.method-block .method .title hr {
+			width: 14.84%;
+		}
+		.method-block .method p {
+			font-family: 'Lato-Regular';
+			font-size: 1.5rem;
+			line-height: 24px;
+			margin-bottom: 25px;
+		}
+	.method-block .img {
+		position: relative;
+		max-width: 632px;
+		width: 55.44%;
+		padding-right: 48px;
+	}
+		.method-block .img .text-v {
+			position: absolute;
+			right: -280px;
+			top: 278px;
+			font-family: 'Raleway-Bold';
+			font-size: 1.2rem;
+			color: #74bff0;
+			-webkit-transform: rotate(-90deg);
+			   -moz-transform: rotate(-90deg);
+			     -o-transform: rotate(-90deg);
+			    -ms-transform: rotate(-90deg);
+			        transform: rotate(-90deg);
+		}
+		.method-block .img .text-v hr {
+			background-color: rgb(116, 191, 240);
+			width: 142px;
+			height: 2px;
+			border: none;
+			display: inline-block;
+		}
+/*------------------------METHOD-BLOCK END------------------------*/
