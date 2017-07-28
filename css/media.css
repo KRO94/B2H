@@ -47,7 +47,6 @@
 		margin-left: 11.01%;
 		margin-right: 11.01%;
 	}
-	/*--------------------------SERVICES-BLOCK END--------------------------*/
 }
 
 /* Medium Devices, Desktops */
@@ -135,6 +134,15 @@
 			margin-right: 6.74%;
 		}
 	/*--------------------------SERVICES-BLOCK END--------------------------*/
+
+	/*--------------------------BLOG-BLOCK START--------------------------*/
+	.blog-block .choose,
+	.blog-block .posts {
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+	/*---------------------------BLOG-BLOCK END---------------------------*/
 }
 
 /* Small Devices, Tablets */
@@ -237,6 +245,16 @@
 		margin-right: auto;
 	}
 	/*--------------------------SERVICES-BLOCK END--------------------------*/
+
+	/*--------------------------BLOG-BLOCK START--------------------------*/
+	.blog-block .posts .postBlogBlock:not(:first-child),
+	.blog-block .posts .postBlogBlock {
+		width: 100%;
+		float: none;
+		display: block;
+		margin: 0 auto 20px;
+	}
+	/*---------------------------BLOG-BLOCK END---------------------------*/
 }
 
 /* Extra Small Devices, Phones */
@@ -293,6 +311,19 @@
 				width: 100%;
 			}
 	/*-------------------------GALLERY-BLOCK END-------------------------*/
+
+	/*--------------------------BLOG-BLOCK START--------------------------*/
+	.blog-block .title {
+		line-height: 58px;
+	}
+	.blog-block .chBlock {
+		font-size: 1.5rem;
+	}
+		.blog-block .chBlock hr {
+			margin-right: 10px;
+			width: 7.3%;
+		}
+	/*---------------------------BLOG-BLOCK END---------------------------*/
 }
 
 /* Custom, iPhone Retina */

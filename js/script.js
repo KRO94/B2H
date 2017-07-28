@@ -53,4 +53,16 @@ $('.slider').owlCarousel({
 			}
 	});
 /*-------------------------------VIDEO------------------------------------*/
+
+/*-------------------------------SWITCH------------------------------------*/
+	$('.blog-block .leftBlock div .chBlock').click(function(){
+		$('.blog-block .leftBlock div .chBlock, .blog-block .posts div').removeClass('active');
+		$(this).addClass('active');
+		for (var i = 1; i <= $('.blog-block .leftBlock div .chBlock').length; i++) {
+			if($('.blog-block .leftBlock div .chBlock:nth-child('+i+')').is('.active')) {
+				$('.blog-block .posts .blog_'+i+'').addClass('active');
+			}
+		}
+	});
+/*-------------------------------SWITCH------------------------------------*/
 });
