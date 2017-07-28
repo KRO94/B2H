@@ -17,6 +17,28 @@
 		line-height: 168px;
 	}
 	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
+
+	/*------------------------GALLERY-BLOCK START------------------------*/
+	.gallery-block .slider .slide .blockText {
+		padding-top: 50px;
+	}
+	.gallery-block .empty-block span {
+		height: 375px;
+	}
+	.gallery-block .slider .owl-nav {
+		width: 150px;
+		margin-left: -75px;
+	}
+		.gallery-block .slider .owl-nav div {
+			line-height: 72px;
+		}
+			.gallery-block .slider .slide .blockText .title {
+				margin-bottom: 25px;
+			}
+			.gallery-block .slider .slide .blockText .number {
+				margin-top: 35px;
+			}
+	/*-------------------------GALLERY-BLOCK END-------------------------*/
 }
 
 /* Medium Devices, Desktops */
@@ -70,6 +92,28 @@
 		margin: 0 auto;
 	}
 	/*------------------------METHOD-BLOCK END------------------------*/
+
+	/*------------------------GALLERY-BLOCK START------------------------*/
+	.gallery-block .empty-block {
+		bottom: 65px;
+		text-align: center;
+	}
+		.gallery-block .empty-block span {
+			display: none;
+		}
+	.gallery-block .slider .owl-nav {
+		left: 85%;
+		margin-left: -150px;
+	}
+		.gallery-block .slider .slide .blockImg,
+		.gallery-block .slider .slide .blockText {
+			float: none;
+			display: block;
+			margin: 0 auto;
+			width: 70%;
+			padding: 0;
+		}
+	/*-------------------------GALLERY-BLOCK END-------------------------*/
 }
 
 /* Small Devices, Tablets */
@@ -136,6 +180,23 @@
 			line-height: 60px;
 		}
 	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
+
+	/*------------------------GALLERY-BLOCK START------------------------*/
+	.gallery-block .slider .owl-nav {
+		width: 100px;
+		margin-left: -100px;
+	}
+		.gallery-block .slider .owl-nav div {
+			line-height: 47px;
+		}
+			.gallery-block .slider .slide .blockText .number {
+				margin-top: 28px;
+				font-size: 2.8rem;
+			}
+				.gallery-block .slider .slide .blockText .number hr {
+					height: 24px;
+				}
+	/*-------------------------GALLERY-BLOCK END-------------------------*/
 }
 
 /* Extra Small Devices, Phones */
@@ -175,6 +236,22 @@
 		display: none;
 	}
 	/*------------------------METHOD-BLOCK END------------------------*/
+
+	/*------------------------GALLERY-BLOCK START------------------------*/
+	.gallery-block .empty-block {
+		bottom: 55px;
+	}
+		.gallery-block .slider .owl-nav {
+			left: 100%;
+		}
+			.gallery-block .slider .slide .blockImg {
+				width: 100%;
+			}
+			.gallery-block .slider .slide .blockText {
+				padding: 0 10px;
+				width: 100%;
+			}
+	/*-------------------------GALLERY-BLOCK END-------------------------*/
 }
 
 /* Custom, iPhone Retina */
@@ -207,5 +284,21 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+}
+@media only screen and (min-width : 1400px) {
+	.gallery-block .empty-block span {
+		height: 538px;
+	}
+	.gallery-block .slider .owl-nav {
+		left: 49%;
+	}
+}
 
+@media only screen and (min-width : 1601px) {
+	.gallery-block .empty-block {
+		display: none;
+	}
+	.gallery-block .slider .owl-nav {
+		left: 50%;
+	}
 }

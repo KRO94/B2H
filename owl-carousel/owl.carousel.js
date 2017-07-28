@@ -2811,7 +2811,7 @@
 	 */
 	Navigation.Defaults = {
 		nav: false,
-		navText: [ '<i class="material-icons">&#xE314;</i>', '<i class="material-icons">&#xE315;</i>' ],
+		navText: [ '<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>' ],
 		navSpeed: false,
 		navElement: 'div',
 		navContainer: false,

@@ -27,26 +27,16 @@ jQuery(document).ready(function(){
 
 /*----------------MODAL WINDOW--------------------------------*/
 
-
-
 /*-------------------------------SLIDER------------------------------------*/
 $('.slider').owlCarousel({
 		items: 1,
 		loop:true,
 		nav:true,
-		dots: true,
-		autoplay: false,
-		autoplaySpeed: 2000
+		dots: false,
+		autoplay: true,
+		autoplaySpeed: 5000
 })
 
-// $('.reviews-testimonial').owlCarousel({
-// 		items: 1,
-// 		loop:true,
-// 		nav:true,
-// 		dots: false,
-// 		autoplay: true,
-// 		autoplaySpeed: 3000
-// })
 /*-------------------------------SLIDER------------------------------------*/
 
 /*-------------------------------VIDEO------------------------------------*/
