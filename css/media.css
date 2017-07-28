@@ -143,6 +143,12 @@
 		width: 100%;
 	}
 	/*---------------------------BLOG-BLOCK END---------------------------*/
+
+	/*---------------------------CONTACT-BLOCK START---------------------------*/
+	.contact-block .wrapper .form .wpcf7 input[name='name'] {
+		margin-right: 3.9%;
+	}
+	/*----------------------------CONTACT-BLOCK END----------------------------*/
 }
 
 /* Small Devices, Tablets */
@@ -192,6 +198,19 @@
 			margin-right: 5.23%;
 		}
 	/*--------------------------SERVICES-BLOCK END--------------------------*/
+
+	/*---------------------------CONTACT-BLOCK START---------------------------*/
+	.contact-block .wrapper .contact,
+	.contact-block .wrapper .form {
+		width: 100%;
+		float: none;
+		margin: 0px auto;
+		clear: both;
+	}
+	.contact-block .wrapper .contact {
+		margin-bottom: 40px;
+	}
+	/*----------------------------CONTACT-BLOCK END----------------------------*/
 }
 
 /* Extra Small Devices, Phones */
@@ -324,6 +343,21 @@
 			width: 7.3%;
 		}
 	/*---------------------------BLOG-BLOCK END---------------------------*/
+
+	/*---------------------------CONTACT-BLOCK START---------------------------*/
+	.contact-block  {
+		background-position: left;
+	}
+		.contact-block .wrapper {
+			padding-top: 30px;
+		}
+			.contact-block .wrapper .form .wpcf7 input[name='name'],
+			.contact-block .wrapper .form .wpcf7 input[name='phone'] {
+				margin-right: 0;
+				width: 100%;
+				max-width: 100%;
+			}
+	/*----------------------------CONTACT-BLOCK END----------------------------*/
 }
 
 /* Custom, iPhone Retina */
