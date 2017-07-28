@@ -39,6 +39,15 @@
 				margin-top: 35px;
 			}
 	/*-------------------------GALLERY-BLOCK END-------------------------*/
+
+	/*-------------------------SERVICES-BLOCK START-------------------------*/
+	.services-block .service-wrapper .serviceBlock,
+	.services-block .service-wrapper .serviceBlock:not(:last-child) {
+		width: 27.98%;
+		margin-left: 11.01%;
+		margin-right: 11.01%;
+	}
+	/*--------------------------SERVICES-BLOCK END--------------------------*/
 }
 
 /* Medium Devices, Desktops */
@@ -114,6 +123,18 @@
 			padding: 0;
 		}
 	/*-------------------------GALLERY-BLOCK END-------------------------*/
+
+	/*-------------------------SERVICES-BLOCK START-------------------------*/
+	.services-block {
+		background-position: 40% 0%;
+	}
+		.services-block .service-wrapper .serviceBlock,
+		.services-block .service-wrapper .serviceBlock:not(:last-child) {
+			width: 36.52%;
+			margin-left: 6.74%;
+			margin-right: 6.74%;
+		}
+	/*--------------------------SERVICES-BLOCK END--------------------------*/
 }
 
 /* Small Devices, Tablets */
@@ -154,6 +175,15 @@
 				border-right: 1px solid #f0f0f0;
 			}
 	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
+
+	/*-------------------------SERVICES-BLOCK START-------------------------*/
+		.services-block .service-wrapper .serviceBlock,
+		.services-block .service-wrapper .serviceBlock:not(:last-child) {
+			width: 39.54%;
+			margin-left: 5.23%;
+			margin-right: 5.23%;
+		}
+	/*--------------------------SERVICES-BLOCK END--------------------------*/
 }
 
 /* Extra Small Devices, Phones */
@@ -197,12 +227,23 @@
 					height: 24px;
 				}
 	/*-------------------------GALLERY-BLOCK END-------------------------*/
+
+	/*-------------------------SERVICES-BLOCK START-------------------------*/
+	.services-block .service-wrapper .serviceBlock,
+	.services-block .service-wrapper .serviceBlock:not(:last-child) {
+		width: 100%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*--------------------------SERVICES-BLOCK END--------------------------*/
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.title{
 		font-size: 4.4rem;
+		line-height: 48px;
 	}
 	/*--------------------HEADER START--------------------*/
 	header a.logo {
