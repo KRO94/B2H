@@ -1034,3 +1034,76 @@ header {
 				background: #ffffff;
 			}
 /*--------------------------------SINGLE END--------------------------------*/
+
+/*--------------------------------GALLERY START--------------------------------*/
+.gallery-page	{
+	position: relative;
+	width: 100%;
+	padding: 70px 0 110px;
+}
+	.gallery-page .img-wrapper {
+		position: relative;
+		width: 100%;
+		padding-bottom: 35px;
+	}
+		.gallery-page .img-wrapper .block {
+			position: relative;
+			float: left;
+			margin-bottom: 35px;
+		}
+		.gallery-page .img-wrapper .block:nth-child(1),
+		.gallery-page .img-wrapper .block:nth-child(4) {
+			max-width: 750px;
+			width: 65.78%;
+		}
+		.gallery-page .img-wrapper .block:nth-child(2),
+		.gallery-page .img-wrapper .block:nth-child(3) {
+			max-width: 360px;
+			width: 31.57%;
+		}
+		.gallery-page .img-wrapper .block:not(:nth-child(2n)) {
+			margin-right: 2.63%;
+		}
+			.gallery-page .img-wrapper .block .img {
+				position: relative;
+				display: block;
+				width: 100%;
+				z-index: 1;
+				overflow: hidden;
+				max-height: 352px;
+				padding: 352px 0 0;
+			}
+				.gallery-page .img-wrapper .block .img img {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					max-width: 1140px;
+					min-height: 352px;
+				}
+			.gallery-page .img-wrapper .block .text {
+				position: relative;
+				font-family: 'Raleway-Bold';
+				font-size: 2rem;
+				line-height: 66px;
+				background: #fef8ed;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				margin-top: -33px;
+				margin-left: 10px;
+				z-index: 2;
+				text-indent: 20px;
+			}
+			.gallery-page .img-wrapper .block:nth-child(1) .text,
+			.gallery-page .img-wrapper .block:nth-child(4) .text {
+				width: 64.93%;
+				max-width: 487px;
+			}
+			.gallery-page .img-wrapper .block:nth-child(2) .text,
+			.gallery-page .img-wrapper .block:nth-child(3) .text {
+				max-width: 340px;
+				width: 94.44%;
+			}
+
+/*---------------------------------GALLERY END---------------------------------*/

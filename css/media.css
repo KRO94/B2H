@@ -241,6 +241,26 @@
 		margin-bottom: 40px;
 	}
 	/*----------------------------CONTACT-BLOCK END----------------------------*/
+
+	/*--------------------------------GALLERY START--------------------------------*/
+			.gallery-page .img-wrapper .block:nth-child(1),
+			.gallery-page .img-wrapper .block:nth-child(4),
+			.gallery-page .img-wrapper .block:nth-child(2),
+			.gallery-page .img-wrapper .block:nth-child(3),
+			.gallery-page .img-wrapper .block:not(:nth-child(2n)) {
+				margin-right: auto;
+				margin-left: auto;
+				width: 100%;
+				max-width: 100%;
+			}
+				.gallery-page .img-wrapper .block:nth-child(1) .text,
+				.gallery-page .img-wrapper .block:nth-child(4) .text,
+				.gallery-page .img-wrapper .block:nth-child(2) .text,
+				.gallery-page .img-wrapper .block:nth-child(3) .text {
+					width: 93%;
+					max-width: 487px;
+				}
+	/*---------------------------------GALLERY END---------------------------------*/
 }
 
 /* Extra Small Devices, Phones */
