@@ -302,6 +302,33 @@ header {
 					-ms-transform: scale(1.6);
 					transform: scale(1.6);
 				}
+/*------------------------------------------------------------------*/
+	.block-after-header .withTitle {
+		position: relative;
+		display: block;
+		width: 94.12%;
+		max-width: 1073px;
+		background: url(../img/top_header_bg.png) no-repeat center;
+		background-size: cover;
+		padding: 69px 0;
+	}
+		.block-after-header .withTitle .title_48 {
+			width: 100%;
+			font-size: 4.8rem;
+			line-height: 60px;
+			font-family: 'Raleway-ExtraBold';
+			color: #ffffff;
+			text-align: center;
+		}
+	.block-after-header .withTitle~.share {
+		box-shadow: 0 0 0 0 rgba(0,0,0,0);
+		min-height: 100%;
+		max-height: 198px;
+	}
+			.block-after-header .withTitle~.share ul li:last-child {
+				border: none;
+			}
+/*------------------------------------------------------------------*/
 /*----------------------BLOCK-AFTER-HEADER END----------------------*/
 
 /*----------------------BLOCK-VIDEO START----------------------*/
@@ -814,3 +841,110 @@ header {
 		text-align: center;
 	}
 /*------------------------------FOOTER END------------------------------*/
+
+/*------------------------------BLOG-PAGE START------------------------------*/
+.blog-page {
+	position: relative;
+	width: 100%;
+	padding: 70px 0 130px;
+}
+	.blog-page .post-wrapper {
+		position: relative;
+		width: 100%;
+	}
+		.blog-page .post-wrapper .postBlogBlock {
+			position: relative;
+			width: 100%;
+			max-width: 555px;
+			margin: 0 auto 30px;
+		}
+			.blog-page .post-wrapper .postBlogBlock .blockImg {
+				position: relative;
+				display: block;
+				width: 100%;
+				z-index: 1;
+				overflow: hidden;
+				max-height: 352px;
+				padding: 278px 0 0;
+			}
+				.blog-page .post-wrapper .postBlogBlock .blockImg img {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					max-width: 1140px;
+					min-height: 352px;
+				}
+				.blog-page .post-wrapper .postBlogBlock .blockImg .more {
+					float: right;
+					line-height: 74px;
+					width: 196px;
+				}
+			.blog-page .post-wrapper .postBlogBlock .blockText {
+				position: relative;
+				background: #fef8ed;
+				padding: 15px 20px 40px;
+			}
+				.blog-page .post-wrapper .postBlogBlock .blockText .name {
+					display: block;
+					font-family: 'Raleway-Bold';
+					font-size: 2rem;
+					line-height: 30px;
+					color: #3c3c3c;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+				.blog-page .post-wrapper .postBlogBlock .blockText .date {
+					color: #717171;
+					font-family: 'Lato-Regular';
+					font-size: 1.2rem;
+					line-height: 20px;
+				}
+				.blog-page .post-wrapper .postBlogBlock .blockText p {
+					font-family: 'Lato-Regular';
+					font-size: 1.4rem;
+					line-height: 20px;
+					margin-top: 10px;
+				}
+/*-------------------------------PAGINATION BLOCK-------------------------------*/
+	.pagination-block {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+	}
+		.pagination-block span,
+		.pagination-block a {
+			position: relative;
+			display: inline-block;
+			margin: 0 9px;
+			line-height: 24px;
+			font-family: 'Lato-Light';
+			color: #b9b9b9;
+			border-bottom: 1px solid #b9b9b9;
+		}
+		.pagination-block .current {
+			font-family: 'Lato-Medium';
+			font-size: 1.8rem;
+			color: #3d3d3d;
+			border-color: #3d3d3d;
+		}
+		.pagination-block .prev,
+		.pagination-block .next {
+			padding: 0 15px;
+			font-family: 'Raleway-Bold';
+			font-size: 1.4rem;
+			line-height: 24px;
+			border: none;
+		}
+		.pagination-block .prev {
+			margin-right: 3.6%;
+			border-right: 2px solid #b9b9b9;
+		}
+		.pagination-block .next {
+			margin-left: 3.6%;
+			border-left: 2px solid #b9b9b9;
+		}
+/*-------------------------------PAGINATION BLOCK-------------------------------*/
+/*-------------------------------BLOG-PAGE END-------------------------------*/

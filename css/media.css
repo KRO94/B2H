@@ -16,6 +16,14 @@
 		font-size: 9.8rem;
 		line-height: 168px;
 	}
+	/*------------------------------------------------------------------*/
+	.block-after-header .withTitle {
+		width: 93.12%;
+	}
+	.block-after-header .withTitle~.share {
+		width: 6.87%;
+	}
+	/*------------------------------------------------------------------*/
 	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
 
 	/*------------------------GALLERY-BLOCK START------------------------*/
@@ -86,6 +94,14 @@
 	.block-after-header .withGirl .big-text {
 		font-size: 7rem;
 	}
+	/*------------------------------------------------------------------*/
+	.block-after-header .withTitle {
+		width: 91.12%;
+	}
+	.block-after-header .withTitle~.share {
+		width: 8.87%;
+	}
+	/*------------------------------------------------------------------*/
 	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
 
 	/*-----------------------METHOD-BLOCK START-----------------------*/
@@ -188,6 +204,14 @@
 				border-left: 1px solid #f0f0f0;
 				border-right: 1px solid #f0f0f0;
 			}
+	/*------------------------------------------------------------------*/
+	.block-after-header .withTitle,
+	.block-after-header .withTitle~.share {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+	}
+	/*------------------------------------------------------------------*/
 	/*----------------------BLOCK-AFTER-HEADER END----------------------*/
 
 	/*-------------------------SERVICES-BLOCK START-------------------------*/
