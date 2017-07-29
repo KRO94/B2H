@@ -782,3 +782,35 @@ header {
 					margin-top: 20px;
 				}
 /*----------------------------CONTACT-BLOCK END----------------------------*/
+
+/*----------------------------CONTACT-BLOCK START----------------------------*/
+.map-block {
+	position: relative;
+	width: 100%;
+	height: 617px;
+	background: #fef8ed;
+	z-index: 1;
+	overflow: hidden;
+}
+	.map-block .map {
+		position: relative;
+		width: 100%;
+		display: block;
+	}
+	.empty-for-map {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+/*-----------------------------CONTACT-BLOCK END-----------------------------*/
+
+/*-----------------------------FOOTER START-----------------------------*/
+	footer {
+		position: relative;
+		background: #fef8ed;
+		line-height: 80px;
+		font-family: 'Lato-Regular';
+		font-size: 1.4rem;
+		text-align: center;
+	}
+/*------------------------------FOOTER END------------------------------*/

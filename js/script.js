@@ -65,4 +65,11 @@ $('.slider').owlCarousel({
 		}
 	});
 /*-------------------------------SWITCH------------------------------------*/
+
+/*------------------------------MAP WRAPPER START------------------------------*/
+	$('.empty-for-map').click(function(){
+		$('.empty-for-map').hide();
+		$('.map-block iframe').mouseout(function(){$('.empty-for-map').show();});
+	});
+/*-------------------------------MAP WRAPPER END-------------------------------*/
 });
