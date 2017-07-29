@@ -848,17 +848,17 @@ header {
 	width: 100%;
 	padding: 70px 0 130px;
 }
-	.blog-page .post-wrapper {
+	.post-wrapper {
 		position: relative;
 		width: 100%;
 	}
-		.blog-page .post-wrapper .postBlogBlock {
+		.post-wrapper .postBlogBlock {
 			position: relative;
 			width: 100%;
 			max-width: 555px;
 			margin: 0 auto 30px;
 		}
-			.blog-page .post-wrapper .postBlogBlock .blockImg {
+			.post-wrapper .postBlogBlock .blockImg {
 				position: relative;
 				display: block;
 				width: 100%;
@@ -867,7 +867,7 @@ header {
 				max-height: 352px;
 				padding: 278px 0 0;
 			}
-				.blog-page .post-wrapper .postBlogBlock .blockImg img {
+				.post-wrapper .postBlogBlock .blockImg img {
 					position: absolute;
 					top: 50%;
 					left: 50%;
@@ -875,17 +875,17 @@ header {
 					max-width: 1140px;
 					min-height: 352px;
 				}
-				.blog-page .post-wrapper .postBlogBlock .blockImg .more {
+				.post-wrapper .postBlogBlock .blockImg .more {
 					float: right;
 					line-height: 74px;
 					width: 196px;
 				}
-			.blog-page .post-wrapper .postBlogBlock .blockText {
+			.post-wrapper .postBlogBlock .blockText {
 				position: relative;
 				background: #fef8ed;
 				padding: 15px 20px 40px;
 			}
-				.blog-page .post-wrapper .postBlogBlock .blockText .name {
+				.post-wrapper .postBlogBlock .blockText .name {
 					display: block;
 					font-family: 'Raleway-Bold';
 					font-size: 2rem;
@@ -895,13 +895,13 @@ header {
 					overflow: hidden;
 					text-overflow: ellipsis;
 				}
-				.blog-page .post-wrapper .postBlogBlock .blockText .date {
+				.post-wrapper .postBlogBlock .blockText .date {
 					color: #717171;
 					font-family: 'Lato-Regular';
 					font-size: 1.2rem;
 					line-height: 20px;
 				}
-				.blog-page .post-wrapper .postBlogBlock .blockText p {
+				.post-wrapper .postBlogBlock .blockText p {
 					font-family: 'Lato-Regular';
 					font-size: 1.4rem;
 					line-height: 20px;
@@ -948,3 +948,89 @@ header {
 		}
 /*-------------------------------PAGINATION BLOCK-------------------------------*/
 /*-------------------------------BLOG-PAGE END-------------------------------*/
+
+/*-------------------------------SINGLE START-------------------------------*/
+.single-blog {
+	position: relative;
+	width: 100%;
+}
+	.single-blog .post {
+		position: relative;
+		padding: 70px 0 85px;
+	}
+		.single-blog .post .text {
+			position: relative;
+			width: 82.9%;
+			max-width: 945px;
+			margin: -110px auto 50px;
+			background: #fef8ed;
+			padding: 45px 90px;
+		}
+			.single-blog .post .text .name {
+				font-family: 'Raleway-Bold';
+				font-size: 4.8rem;
+			}
+			.single-blog .post .text .date {
+				font-family: 'Lato-Regular';
+				font-size: 1.4rem;
+				color: #717171;
+				margin-top: 20px;
+			}
+		.single-blog .post .content {
+			position: relative;
+			width: 100%;
+		}
+			.single-blog .post .content p {
+				font-family: 'Lato-Regular';;
+				font-size: 1.4rem;
+				line-height: 22px;
+				margin-bottom: 15px;
+			}
+			.single-blog .post .content blockquote {
+				font-family: 'Lato-Bold';
+				font-style: italic;
+				font-size: 1.8rem;
+				line-height: 30px;
+				border-left: 8px solid #69d6cc;
+				width: 80%;
+				margin: 20px auto;
+			}
+	.alignleft {
+		float: left;
+		margin: 5px 15px 5px 0;
+	}
+	.alignright {
+		float: right;
+		margin: 5px 0 5px 15px;
+	}
+	.aligncenter {
+		display: block;
+		margin: 5px auto;
+	}
+	.single-blog .similar {
+		position: relative;
+		width: 100%;
+		padding: 50px 0 20px;
+		background: url(../img/similar_bg.png) no-repeat center;
+		background-size: cover;
+	}
+		.single-blog .similar .title_48 {
+			font-family: 'Raleway-ExtraBold';
+			font-size: 4.8rem;
+			color: #3d3d3d;
+			line-height: 60px;
+			margin-bottom: 73px;
+		}
+			.single-blog .similar .title_48 hr {
+				height: 4px;
+				width: 5.96%;
+				background-color: #69d6cc;
+				border: none;
+				margin-right: 15px;
+				float: left;
+				margin-top: 28px;
+			}
+			.single-blog .similar .post-wrapper .postBlogBlock .blockText {
+				background: #ffffff;
+			}
+/*--------------------------------SINGLE END--------------------------------*/
