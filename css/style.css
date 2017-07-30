@@ -1184,3 +1184,36 @@ header {
 				margin-left: 2.63%;
 			}
 /*----------------------------------PRICE END----------------------------------*/
+
+/*----------------------------------PAGEC START----------------------------------*/
+.pageC {
+	background: url(../img/contact_bg.png) no-repeat center;
+	background-size: cover;
+	padding: 50px 0 140px;
+}
+	.pageC .wrapper {
+		padding: 0;
+	}
+		.pageC .title_48 {
+			font-family: 'Raleway-ExtraBold';
+			font-size: 4.8rem;
+			color: #3d3d3d;
+			line-height: 60px;
+			margin-bottom: 40px;
+		}
+			.pageC .title_48 hr {
+				height: 4px;
+				max-width: 68px;
+				background-color: #69d6cc;
+				border: none;
+				margin-right: 15px;
+				float: left;
+				margin-top: 28px;
+			}
+			.pageC .contact .title_48 hr {
+				width: 18.88%;
+			}
+			.pageC .form .title_48 hr {
+				width: 12.25%;
+			}
+/*-----------------------------------PAGEC END-----------------------------------*/
