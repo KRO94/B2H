@@ -171,6 +171,22 @@
 		margin-right: 3.9%;
 	}
 	/*----------------------------CONTACT-BLOCK END----------------------------*/
+
+	/*---------------------------------PRICE START---------------------------------*/
+			.price-block .block-service .topBlock>span {
+				font-size: 2.3rem;
+			}
+					.price-block .block-service .topBlock>span hr {
+						width: 7.5%;
+						height: 3px;
+						margin-top: 21px;
+						margin-right: 3.16%;
+					}
+				.price-block .block-service .bottomBlock .blockImg,
+				.price-block .block-service .bottomBlock .blockText {
+					width: 100%;
+				}
+	/*----------------------------------PRICE END----------------------------------*/
 }
 
 /* Small Devices, Tablets */
@@ -261,6 +277,18 @@
 					max-width: 487px;
 				}
 	/*---------------------------------GALLERY END---------------------------------*/
+
+	/*---------------------------------PRICE START---------------------------------*/
+			.price-block .block-service .topBlock .right {
+				position: relative;
+				margin: 0 auto;
+			}
+			.price-block .block-service .bottomBlock .blockText,
+			.price-block .block-service .bottomBlock .blockImg {
+				float: none;
+				margin: 0 auto;
+			}
+	/*----------------------------------PRICE END----------------------------------*/
 }
 
 /* Extra Small Devices, Phones */
@@ -440,6 +468,17 @@
 				margin-top: 21px;
 			}
 	/*--------------------------------SINGLE END--------------------------------*/
+
+	/*---------------------------------PRICE START---------------------------------*/
+			.price-block .block-service .topBlock>span {
+				font-size: 1.8rem;
+				line-height: 2.8rem;
+			}
+				.price-block .block-service .topBlock>span hr {
+					height: 2px;
+					margin-top: 13px;
+				}
+	/*----------------------------------PRICE END----------------------------------*/
 }
 
 /* Custom, iPhone Retina */
