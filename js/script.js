@@ -45,7 +45,7 @@ $('.slider').owlCarousel({
 		var width = $(this).width();
 		$(this).css('display','none');
 		var src = $('.block-video').find('iframe').attr('src');
-		$('iframe').attr({'src': src+'?rel=0&autoplay=1','width':width,'height':height}).show();
+		$('.block-video iframe').attr({'src': src+'?rel=0&autoplay=1','width':width,'height':height}).show();
 	});
 	$(window).resize(function(){
 			if($('img.prev').attr('style') && $(".block-video iframe").attr('width') != "100%") {
