@@ -1,4 +1,12 @@
-@import url(fonts.css);
+/*
+Theme Name: Back 2 Health
+Description: Back 2 Health
+Author: KRO
+Author URI: https://www.work.ua/resumes/3674583/
+Version: 1.0
+*/
+
+@import url(css/fonts.css);
 
 * {
 	margin: 0;
@@ -6,7 +14,7 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Raleway-Black', 'Raleway-Bold', 'Raleway-ExtraBold', 'Raleway-Medium', 'Raleway-Regular', 'Raleway-SemiBold', 'Lato-Black', 'Lato-Bold', 'Lato-Light', 'Lato-Regular', 'Source Sans Pro', sans-serif;
+	font-family: 'Raleway-Regular', 'Raleway-Black', 'Raleway-Bold', 'Raleway-ExtraBold', 'Raleway-Medium', 'Raleway-SemiBold', 'Lato-Black', 'Lato-Bold', 'Lato-Light', 'Lato-Regular', 'Source Sans Pro', sans-serif;
 	font-size: 1.6rem;
 /*	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -205,7 +213,7 @@ header {
 		display: block;
 		width: 94.12%;
 		max-width: 1073px;
-		background: url(../img/top_block_girl.png) no-repeat center;
+		background: url(img/top_block_girl.png) no-repeat center;
 		background-size: cover;
 		padding-top: 259px;
 	}
@@ -288,7 +296,7 @@ header {
 		display: block;
 		width: 94.12%;
 		max-width: 1073px;
-		background: url(../img/top_header_bg.png) no-repeat center;
+		background: url(img/top_header_bg.png) no-repeat center;
 		background-size: cover;
 		padding: 69px 0;
 	}
@@ -328,7 +336,7 @@ header {
 .method-block {
 	position: relative;
 	width: 100%;
-	background: url(../img/method_block_img.png) no-repeat center;
+	background: url(img/method_block_img.png) no-repeat center;
 	background-size: cover;
 	padding: 65px 0 120px;
 }
@@ -380,7 +388,7 @@ header {
 		position: relative;
 		width: 100%;
 		padding: 140px 0 70px;
-		background: url(../img/block_gallery_bg.png) no-repeat center;
+		background: url(img/block_gallery_bg.png) no-repeat center;
 		background-size: cover;
 		margin-top: -70px;
 	}
@@ -471,7 +479,7 @@ header {
 .services-block {
 	position: relative;
 	width: 100%;
-	background: url(../img/services_bg.png) no-repeat top center;
+	background: url(img/services_bg.png) no-repeat top center;
 }
 	.services-block .title {
 		padding-top: 34px; 
@@ -546,7 +554,7 @@ header {
 .blog-block {
 	position: relative;
 	width: 100%;
-	background: url(../img/blog_bg.png) no-repeat center;
+	background: url(img/blog_bg.png) no-repeat center;
 	background-size: cover;
 	padding: 65px 0;
 }
@@ -627,11 +635,15 @@ header {
 				padding: 20px;
 			}
 				.blog-block .posts .postBlogBlock .blockText .name {
+					position: relative;
 					display: block;
 					font-family: 'Raleway-Bold';
 					font-size: 2rem;
 					line-height: 30px;
 					color: #3c3c3c;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
 				}
 				.blog-block .posts .postBlogBlock .blockText .date {
 					color: #717171;
@@ -675,7 +687,7 @@ header {
 .contact-block {
 	position: relative;
 	width: 100%;
-	background: url(../img/services_bg.png) no-repeat top center;
+	background: url(img/services_bg.png) no-repeat top center;
 }
 	.contact-block .title {
 		padding-top: 34px; 
@@ -762,21 +774,21 @@ header {
 					line-height: 50px;
 					padding: 0 10px 0 30px;
 				}
-				.contact-block .wrapper .form .wpcf7 input[name='name'] {
-					background: url(../img/icon_man.png) no-repeat left;
+				.contact-block .wrapper .form .wpcf7 input[name='your-name'] {
+					background: url(img/icon_man.png) no-repeat left;
 					margin-right: 4.86%;
 				}
-				.contact-block .wrapper .form .wpcf7 input[name='phone'] {
-					background: url(../img/icon_phone.png) no-repeat left;
+				.contact-block .wrapper .form .wpcf7 input[name='your-tel'] {
+					background: url(img/icon_phone.png) no-repeat left;
 				}
-				.contact-block .wrapper .form .wpcf7 input[name='name'],
-				.contact-block .wrapper .form .wpcf7 input[name='phone'] {
+				.contact-block .wrapper .form .wpcf7 input[name='your-name'],
+				.contact-block .wrapper .form .wpcf7 input[name='your-tel'] {
 					max-width: 262px;
 					width: 47.2%;
 					margin-bottom: 10px;
 				}
-				.contact-block .wrapper .form .wpcf7 input[name='time'] {
-					background: url(../img/icon_clock.png) no-repeat left;
+				.contact-block .wrapper .form .wpcf7 input[name='your-time'] {
+					background: url(img/icon_clock.png) no-repeat left;
 					width: 100%;
 					margin-bottom: 20px;
 				}
@@ -966,7 +978,7 @@ header {
 				line-height: 22px;
 				margin-bottom: 15px;
 			}
-			.single-blog .post .content blockquote {
+			blockquote {
 				font-family: 'Lato-Bold';
 				font-style: italic;
 				font-size: 1.8rem;
@@ -991,7 +1003,7 @@ header {
 		position: relative;
 		width: 100%;
 		padding: 50px 0 20px;
-		background: url(../img/similar_bg.png) no-repeat center;
+		background: url(img/similar_bg.png) no-repeat center;
 		background-size: cover;
 	}
 		.single-blog .similar .title_48 {
@@ -1187,7 +1199,7 @@ header {
 
 /*----------------------------------PAGEC START----------------------------------*/
 .pageC {
-	background: url(../img/contact_bg.png) no-repeat center;
+	background: url(img/contact_bg.png) no-repeat center;
 	background-size: cover;
 	padding: 50px 0 140px;
 }
@@ -1217,3 +1229,31 @@ header {
 				width: 12.25%;
 			}
 /*-----------------------------------PAGEC END-----------------------------------*/
+
+/*-----------------------------------CONTENT PAGE START-----------------------------------*/
+	.content-page {
+		position: relative;
+		width: 100%;
+	}
+		.content-page .post_content {
+			position: relative;
+			width: 100%;
+			padding: 50px 0;
+		}
+			.content-page .post_content p {
+				margin-bottom: 25px;
+			}
+				.content-page .post_content p a {
+					color: #3d3d3d;
+				}
+/*------------------------------------CONTENT PAGE END------------------------------------*/
+
+/*-----------------------------------WPCF7 START-----------------------------------*/
+div.wpcf7-response-output {
+	border: none;
+	padding: 0;
+}
+div.wpcf7 .ajax-loader {
+	display: none;
+}
+/*------------------------------------WPCF7 END------------------------------------*/

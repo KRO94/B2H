@@ -1,54 +1,35 @@
 <div class="price-block">
 	<div class="container">
+		<?php $query = new WP_Query(array('page_id'=>10)); ?>
+		<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+			<?php if(get_field('service_page')): ?>
+			<?php while(has_sub_field('service_page')): ?>
 		<div class="block-service clearfix">
 			<div class="topBlock">
-				<span><hr> Медицинский массаж</span>
+				<span><hr> <?php the_sub_field('service_name'); ?></span>
 				<div class="right">
-					<div class="price">300 <span>грн</span></div>
+					<div class="price"><?php the_sub_field('service_price') ?> <span>грн</span></div>
 					<a href="#" class="btn-press reserve">Записаться на сеанс</a>
 				</div>
 			</div>
 			<div class="bottomBlock">
 				<div class="blockImg leftBlock">
 					<div class="img">
-						<img src="img/service_1_1.png" alt="" class="img-responsive">
+						<?php $photo_service = get_sub_field('service_img'); ?>
+						<img src="<?php echo $photo_service['url']; ?>" alt="" class="img-responsive">
 					</div>
 				</div>
 				<div class="blockText leftBlock">
-					Цель массажа - привести организм к гармоничному состоянию <br>
-					- улучшает капиллярное кровообращение, <br>
-					- повышает гибкость позвоночника и суставов, <br>
-					- нормализует обмен веществ, <br>
-					- помогает бороться с лишним весом, <br>
-					- снимает стресс, депрессию, хроническую усталость, <br>
-					- повышает работоспособность и быстроту мышления.
+					<?php the_sub_field('service_description') ?>
 				</div>
 			</div>
 		</div>
-		<div class="block-service clearfix">
-			<div class="topBlock">
-				<span><hr> Восстанавливающий массаж</span>
-				<div class="right">
-					<div class="price">600 <span>грн</span></div>
-					<a href="#" class="btn-press reserve">Записаться на сеанс</a>
-				</div>
-			</div>
-			<div class="bottomBlock">
-				<div class="blockImg leftBlock">
-					<div class="img">
-						<img src="img/service_1_2.png" alt="" class="img-responsive">
-					</div>
-				</div>
-				<div class="blockText leftBlock">
-					Цель массажа - привести организм к гармоничному состоянию <br>
-					- улучшает капиллярное кровообращение, <br>
-					- повышает гибкость позвоночника и суставов, <br>
-					- нормализует обмен веществ, <br>
-					- помогает бороться с лишним весом, <br>
-					- снимает стресс, депрессию, хроническую усталость, <br>
-					- повышает работоспособность и быстроту мышления.
-				</div>
-			</div>
-		</div>
+		<?php endwhile; ?>
+		<?php endif; ?>
+		<?php endwhile; ?>
+		<!-- post navigation -->
+		<?php else: ?>
+		<!-- no posts found -->
+		<?php endif; ?>
 	</div>
 </div>

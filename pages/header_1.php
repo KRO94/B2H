@@ -1,17 +1,10 @@
 <header>
 	<div class="container">
-		<a href="./" class="logo">
-			<img src="img/logo.png" alt="" class='img-responsive'>
+		<a href="/" class="logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="" class='img-responsive'>
 			<span>Back 2 Health</span>
 		</a>
-		<ul class="menu">
-			<li><a href="#">Главная</a></li>
-			<li><a href="#">Методика</a></li>
-			<li><a href="#">Галерея</a></li>
-			<li><a href="#">Цены и услуги</a></li>
-			<li><a href="#">Блог/полезная информация</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>
+		<?php wp_nav_menu( array('theme_location' => 'header_menu')); ?>
 		<ul class="social">
 			<li><a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 			<li><a href="#instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>

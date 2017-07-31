@@ -16,12 +16,7 @@
 			</div>
 			<div class="rightBlock form">
 				<div class="title_48"><hr>Обратная связь</div>
-				<div class="wpcf7">
-					<input type="text" name='name' placeholder='Имя'>
-					<input type="text" name='phone' placeholder='Телефон'>
-					<input type="text" name='time' placeholder='Удобное время для звонка менеджера'>
-					<input type="submit" class='btn-press' value='Записаться на сеанс'>
-				</div>
+				<?php echo do_shortcode('[contact-form-7 id="21" title="Обратная связь"]'); ?>
 			</div>
 		</div>
 	</div>

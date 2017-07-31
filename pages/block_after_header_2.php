@@ -1,7 +1,7 @@
 <div class="block-after-header">
 	<div class="container">
 		<div class="withTitle leftBlock">
-			<div class="title_48">Блог</div>
+			<div class="title_48"><?php the_title(); ?></div>
 		</div>
 		<div class="share rightBlock">
 			<ul>

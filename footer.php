@@ -1,7 +1,7 @@
-<footer>© 2017 B2H. Все права защищены</footer>
+		<footer>© 2017 B2H. Все права защищены</footer>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<?php wp_footer(); ?>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/script.js"></script>
-		<script src="owl-carousel/owl.carousel.js"></script>
 	</body>
 </html>

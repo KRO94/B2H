@@ -1,10 +1,10 @@
-	<?php require_once 'header.php'; ?>
-	<?php require_once 'pages/block_after_header.php'; ?>
-	<?php require_once 'pages/block_video.php'; ?>
-	<?php require_once 'pages/method_block.php'; ?>
-	<?php require_once 'pages/gallery_block.php'; ?>
-	<?php require_once 'pages/services_block.php'; ?>
-	<?php require_once 'pages/blog_block.php'; ?>
-	<?php require_once 'pages/contact_block.php'; ?>
-	<?php require_once 'pages/map_block.php'; ?>
-	<?php require_once 'footer.php'; ?>
+	<?php get_header(); ?>
+	<?php get_template_part('pages/block_after_header'); ?>
+	<?php get_template_part('pages/block_video'); ?>
+	<?php get_template_part('pages/method_block'); ?>
+	<?php get_template_part('pages/gallery_block'); ?>
+	<?php get_template_part('pages/services_block'); ?>
+	<?php get_template_part('pages/blog_block'); ?>
+	<?php get_template_part('pages/contact_block'); ?>
+	<?php get_template_part('pages/map_block'); ?>
+	<?php get_footer(); ?>

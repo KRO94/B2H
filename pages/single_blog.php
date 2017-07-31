@@ -1,55 +1,45 @@
 <div class="single-blog">
 	<div class="container">
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div class="post">
-			<img src="img/single-post-img.png" alt="" class="img-responsive">
+			<?php echo get_the_post_thumbnail(); ?>
 			<div class="text">
-				<div class="name">Нарушения осанки</div>
-				<div class="date">22 августа 2017</div>
+				<div class="name"><?php the_title(); ?></div>
+				<div class="date"><?php the_time('j F Y'); ?></div>
 			</div>
 			<div class="content clearfix">
-					<p>Нарушения осанки — это симптом, характеризующий группу заболеваний, проявляющихся искривлением позвоночника.</p>
-					<p>В норме позвоночник имеет несколько умеренных изгибов для обеспечения лучшей амортизации. Это т.н. физиологические изгибы. К ним относятся шейный и поясничный лордозы (изгибы вперед) и грудной кифоз (изгиб назад).</p>
-					<p>Для каждого вида нарушения осанки характерно свое положение позвоночника, лопаток, таза и нижних конечностей. Сохранение патологической осанки возможно благодаря определенному состоянию связок и мышц. Отклонение позвоночника в сторону — сколиоз. В передне-заднем направлении — сутулость, круглая спина, кругловогнутая спина, плоская спина, плосковогнутая спина.</p>
-					<blockquote>К врождённым причинам искривления позвоночника относят нарушения внутриутробного развития, что приводит к недоразвитости позвонков, образованию клиновидных и дополнительных позвонков и других патологий.</blockquote>
-					<p>Нарушения осанки — это симптом, характеризующий группу заболеваний, проявляющихся искривлением позвоночника.</p>
-					<p>В норме позвоночник имеет несколько умеренных изгибов для обеспечения лучшей амортизации. Это т.н. физиологические изгибы. К ним относятся шейный и поясничный лордозы (изгибы вперед) и грудной кифоз (изгиб назад).</p>
-					<p>Для каждого вида нарушения осанки характерно свое положение позвоночника, лопаток, таза и нижних конечностей. Сохранение патологической осанки возможно благодаря определенному состоянию связок и мышц. Отклонение позвоночника в сторону — сколиоз. В передне-заднем направлении — сутулость, круглая спина, кругловогнутая спина, плоская спина, плосковогнутая спина.</p>
-					<img src="img/single-sm-img1.png" alt="" class="img-responsive alignleft">
-					<img src="img/single-sm-img2.png" alt="" class="img-responsive alignright">
+				<?php the_content(); ?>
 			</div>
 		</div>
+		<?php endwhile; endif; ?>
 	</div>
 	<div class="similar">
 		<div class="container">
 			<div class="title_48"><hr>Похожие новости</div>
 			<div class="row">
 			<div class="post-wrapper">
-				<div class="col-sm-6">
-					<div class="postBlogBlock">
-						<a href="#" class="blockImg">
-							<img src="img/blog-post-1.png" alt="" class="img-responsive">
-							<span class="btn-press more">Подробнее <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-						</a>
-						<div class="blockText">
-							<a href="#" class="name">Нарушения осанки</a>
-							<div class="date">22 августа 2017</div>
-							<p>Боли в шее и пояснице – частый спутник тех, кому за тридцать пять. Иногда можно справиться с ними при помощи физкультуры.</p>
+				<?php $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
+				query_posts("paged=$page&cat=3&showposts=2");
+				?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<div class="col-sm-6">
+						<div class="postBlogBlock">
+							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="blockImg">
+								<?php echo get_the_post_thumbnail(); ?>
+								<span class="btn-press more">Подробнее <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+							</a>
+							<div class="blockText">
+								<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="name"><?php the_title(); ?></a>
+								<div class="date"><?php the_time('j F Y'); ?></div>
+								<p><?php the_field('brief_description'); ?></p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="postBlogBlock">
-						<a href="#" class="blockImg">
-							<img src="img/blog-post-2.png" alt="" class="img-responsive">
-							<span class="btn-press more">Подробнее <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-						</a>
-						<div class="blockText">
-							<a href="#" class="name">Массажный салон</a>
-							<div class="date">22 августа 2017</div>
-							<p>Боли в шее и пояснице – частый спутник тех, кому за тридцать пять. Иногда можно справиться с ними при помощи физкультуры.</p>
-						</div>
-					</div>
-				</div>
+				<?php endwhile; ?>
+				<!-- post navigation -->
+				<?php else: ?>
+				<!-- no posts found -->
+				<?php endif; ?>
 			</div>
 			</div>
 		</div>
