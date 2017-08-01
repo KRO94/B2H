@@ -1217,3 +1217,112 @@ header {
 				width: 12.25%;
 			}
 /*-----------------------------------PAGEC END-----------------------------------*/
+
+/*------------------------------------MODAL WINDOW START------------------------------------*/
+.modal-window {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.6);
+	z-index: 999;
+	overflow: auto;
+	display: none;
+}
+.modal-close-window {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.close-btn {
+	position: absolute;
+	right: -24px;
+	top: -24px;
+	font-size: 2.4rem;
+	opacity: .7;
+	color: #ffffff;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.close-btn:hover {
+	opacity: 1;
+}
+.modal-window .form-wrap {
+	max-width: 420px;
+	width: 100%;
+	position: relative;
+  background: #ffffff;
+  z-index: 10;
+  padding: 0px 0px 40px;
+  margin: 5% auto 0 auto;
+}
+.modal-window .form-wrap-one,
+.modal-window .form-wrap-two {
+	display: none;
+}
+.modal-window .form-title {
+	width: 100%;
+	text-align: center;
+}
+.modal-window .form-title p {
+	font-family: 'Raleway-ExtraBold';
+	font-size: 3.2rem;
+	line-height: 44px;
+	margin-bottom: 0;
+	background: #69d6cc;
+	padding: 25px 30px;
+	color: #ffffff;
+}
+.modal-window .form-title span {
+	font-family: 'Lato-Regular';
+	display: block;
+	font-size: 1.8rem;
+	line-height: 24px;
+	padding: 17px 0;
+}
+.modal-window .wpcf7 {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 30px;
+	text-align: center;
+}
+.modal-window .wpcf7 input,
+.modal-window .wpcf7 textarea {
+	width: 100%;
+	border: none;
+	outline: none;
+}
+.modal-window .wpcf7 input[type=text],
+.modal-window .wpcf7 input[type=email] {
+	line-height: 50px;
+	margin-bottom: 10px;
+	font-family: 'Lato-Regular';
+	border-bottom: 1px solid #d4d4d4;
+	color: #3d3d3d;
+	padding-left: 30px;
+}
+.modal-window .wpcf7 input[name='your-name'] {
+	background: url(img/icon_man.png) no-repeat left;
+}
+.modal-window .wpcf7 input[name='your-tel'] {
+	background: url(img/icon_phone.png) no-repeat left;
+}
+.modal-window .wpcf7 input[name='your-email'] {
+	background: url(img/icon_mail.png) no-repeat left;
+}
+.modal-window .wpcf7 textarea {
+	padding: 13px 0;
+	line-height: 24px;
+	border-bottom: 1px solid #d4d4d4;
+}
+.modal-window .wpcf7 input[type=submit] {
+	line-height: 74px;
+	max-width: 290px;
+	margin-top: 40px;
+}
+/*-------------------------------------MODAL WINDOW END-------------------------------------*/

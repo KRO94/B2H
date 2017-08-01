@@ -19,11 +19,20 @@ jQuery(document).ready(function(){
 /*----------------MODAL WINDOW--------------------------------*/
 	$('.modal-close-window').click(function(){
 		$('.modal-window').css('display','none');
+		$('.modal-window .form-wrap-one, .modal-window .form-wrap-two').css('display','none');
 	});
 
 	$('.modal-window .close-btn').click(function(){
 		$('.modal-window').css('display','none');
+		$('.modal-window .form-wrap-one, .modal-window .form-wrap-two').css('display','none');
 	});
+
+	$('.enrol').click(function(){
+		$('.modal-window .form-wrap-one, .modal-window').show();
+	})
+	$('.questions').click(function(){
+		$('.modal-window .form-wrap-two, .modal-window').show();
+	})
 
 /*----------------MODAL WINDOW--------------------------------*/
 
@@ -44,7 +53,10 @@ $('.slider').owlCarousel({
 		var height = $(this).height();
 		var width = $(this).width();
 		$(this).css('display','none');
+		console.log(height);
+		console.log(width);
 		var src = $('.block-video').find('iframe').attr('src');
+		console.log(src);
 		$('.block-video iframe').attr({'src': src+'?rel=0&autoplay=1','width':width,'height':height}).show();
 	});
 	$(window).resize(function(){
@@ -72,4 +84,16 @@ $('.slider').owlCarousel({
 		$('.map-block iframe').mouseout(function(){$('.empty-for-map').show();});
 	});
 /*-------------------------------MAP WRAPPER END-------------------------------*/
+
+/*-------------------------------ADD CLASS START-------------------------------*/
+	$('.postBlogBlock img, .single-blog img').addClass('img-responsive');
+/*--------------------------------ADD CLASS END--------------------------------*/
+
+/*--------------------------------MASK START--------------------------------*/
+	$('input[name=your-tel]').mask('+389999999999');
+/*---------------------------------MASK END---------------------------------*/
+
+/*---------------------------------FANCYBOX START---------------------------------*/
+	$('fancybox').fancybox();
+/*----------------------------------FANCYBOX END----------------------------------*/
 });
